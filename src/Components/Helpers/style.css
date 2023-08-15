@@ -11,47 +11,7 @@
     #171a1d 100%
   );
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer base {
-  .heros-custom {
-    @apply  items-center ps-10 justify-around grid lg:flex   lg:translate-y-[5rem] md:translate-y-[5rem] sm:translate-y-[5rem]   ;
-  }
-  @media (width<1024px) {
-    .heros-custom{
-      @apply ps-20 -translate-y-9
-    }
-  }
-  
-  @media (width<640px) {
-    .heros-custom {
-      @apply translate-y-16 ;
-    }
-    
-  }
-  @media (width<553px) {
-    .heros-custom {
-      @apply translate-y-12 ;
-    }
-    
-  }
-  @media (width<500px) {
-    .heros-custom {
-      @apply translate-y-7 ;
-    }
-    
-  }
-  @media (width<421px) {
-    .heros-custom {
-      @apply translate-y-1 px-10  text-justify  ;
-    }
-    
-  }
-  @media (width<321px) {
-    .heros-custom {
-      @apply translate-y-20 px-10  text-justify ;
-    }
-    
-  }
-}
