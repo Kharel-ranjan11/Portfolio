@@ -5,13 +5,97 @@
     180deg,
     rgba(255, 255, 255, 0) 0%,
     rgba(23, 26, 29, 0.63) 89%,
-    rgba(23, 26, 29, 0.722) 89%,
+    rgba(23, 26, 29, 0.996) 89%,
     rgba(23, 26, 29, 0.673) 89%,
     rgb(23, 26, 29) 100%,
     #171a1d 100%
+  );
+}
+.bg {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7932422969187676) 0%,
+    rgba(2, 3, 3, 0.7372198879551821) 0%,
+    rgba(0, 0, 0, 0.6251750700280112) 3%,
+    rgba(0, 0, 0, 0.583158263305322) 5%,
+    rgba(3, 3, 4, 0.6363795518207283) 7%,
+    rgba(4, 5, 5, 0.6643907563025211) 20%,
+    rgba(0, 0, 0, 0.6615896358543417) 23%,
+    rgba(0, 0, 0, 0.7092086834733893) 26%,
+    rgba(5, 6, 7, 0.2778361344537815) 33%,
+    rgba(0, 0, 0, 0.15458683473389356) 37%,
+    rgba(13, 14, 16, 0) 54%,
+    rgba(17, 19, 21, 0) 72%,
+    rgba(3, 3, 4, 0.6139705882352942) 91%,
+    rgba(2, 2, 3, 0.6167717086834734) 93%,
+    rgba(0, 0, 0, 0.6027661064425771) 95%,
+    rgba(23, 26, 29, 0.41789215686274506) 100%
   );
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  .height_ {
+    @apply h-[108vh];
+  }
+  @media (width<374px) {
+    .height_ {
+      @apply h-[158vh];
+    }
+  }
+  @media (width<374px) {
+    .height_ {
+      @apply h-[158vh];
+    }
+  }
+  .forPercentage::after {
+    content: attr(data-name);
+    position: absolute;
+    right: 0;
+    color: red;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #00ffff;
+    z-index: 9999;
+  }
+
+  @media (width<1250px) {
+    .Height {
+      @apply h-[110vh];
+    }
+  }
+  @media (width<818px) {
+    .Height {
+      @apply h-[50rem];
+    }
+  }
+  @media (width<724px) {
+    .Height {
+      @apply h-[70rem];
+    }
+  }
+  @media (330px<=width<=400px) {
+    .Height {
+      @apply h-[200vh];
+    }
+  }
+  @media (819px<=width<=835px) {
+    .Height {
+      @apply h-[70vh];
+    }
+  }
+  @media (402px<=width<=500px) {
+    .Height {
+      @apply h-[160vh];
+    }
+  }
+  @media (width<325px) {
+    .Height {
+      @apply h-[300vh];
+    }
+  }
+}
