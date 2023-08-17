@@ -11,28 +11,7 @@
     #171a1d 100%
   );
 }
-.bg {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.7932422969187676) 0%,
-    rgba(2, 3, 3, 0.7372198879551821) 0%,
-    rgba(0, 0, 0, 0.6251750700280112) 3%,
-    rgba(0, 0, 0, 0.583158263305322) 5%,
-    rgba(3, 3, 4, 0.6363795518207283) 7%,
-    rgba(4, 5, 5, 0.6643907563025211) 20%,
-    rgba(0, 0, 0, 0.6615896358543417) 23%,
-    rgba(0, 0, 0, 0.7092086834733893) 26%,
-    rgba(5, 6, 7, 0.2778361344537815) 33%,
-    rgba(0, 0, 0, 0.15458683473389356) 37%,
-    rgba(13, 14, 16, 0) 54%,
-    rgba(17, 19, 21, 0) 72%,
-    rgba(3, 3, 4, 0.6139705882352942) 91%,
-    rgba(2, 2, 3, 0.6167717086834734) 93%,
-    rgba(0, 0, 0, 0.6027661064425771) 95%,
-    rgba(23, 26, 29, 0.41789215686274506) 100%
-  );
-}
+
 
 @tailwind base;
 @tailwind components;
@@ -97,5 +76,95 @@
     .Height {
       @apply h-[300vh];
     }
+  }
+}
+/* For Contact Component */
+.Contact_Height {
+  height: auto;
+}
+@media (width<1230px) {
+  .Contact_Height {
+    height: 821px;
+  }
+}
+@media (width<770px) {
+  .Contact_Height {
+    height: 1059px;
+  }
+}
+@media (width<380px) {
+  .Contact_Height {
+    height: 1088px;
+  }
+}
+.Contact {
+  position: relative;
+}
+.Contact::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  /* color: #5d040431; */
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7932422969187676) 0%,
+    rgba(2, 3, 3, 0.7372198879551821) 0%,
+    rgba(0, 0, 0, 0.6251750700280112) 3%,
+    rgba(0, 0, 0, 0.583158263305322) 5%,
+    rgba(3, 3, 4, 0.6363795518207283) 7%,
+    rgba(4, 5, 5, 0.6643907563025211) 20%,
+    rgba(0, 0, 0, 0.6615896358543417) 23%,
+    rgba(0, 0, 0, 0.7092086834733893) 26%,
+    rgba(5, 6, 7, 0.2778361344537815) 33%,
+    rgba(0, 0, 0, 0.15458683473389356) 37%,
+    rgba(13, 14, 16, 0) 54%,
+    rgba(17, 19, 21, 0) 72%,
+    rgba(3, 3, 4, 0.6139705882352942) 91%,
+    rgba(2, 2, 3, 0.6167717086834734) 93%,
+    rgba(0, 0, 0, 0.6027661064425771) 95%,
+    rgba(23, 26, 29, 0.41789215686274506) 100%
+  );
+}
+
+/* Number Components */
+.Number_Height {
+  height: 60vh;
+}
+@media (width<1230px) {
+  .Number_Height {
+    height: 50vh;
+  }
+}
+@media (width<770px) {
+  .Number_Height {
+    height: 70vh;
+  }
+}
+@media (width<380px) {
+  .Number_Height {
+    height: 408px;
+  }
+}
+/* Section components  */
+.section-width {
+  width: 600px;
+}
+@media (width<600px) {
+  .section-width {
+    width: 500px;
+  }
+}
+@media (width<500px) {
+  .section-width {
+    width: 400px;
+  }
+}
+@media (width<400px) {
+  .section-width {
+    width: 400px;
   }
 }

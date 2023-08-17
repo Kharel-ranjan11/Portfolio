@@ -1,27 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaUserAlt } from "react-icons/fa";
 import { ImHammer2 } from "react-icons/im";
 import { PiShoppingBagFill } from "react-icons/pi";
 import { RiDoubleQuotesR } from "react-icons/ri";
 import { ParallaxBanner } from 'react-scroll-parallax';
-import './style.css'
+import './style.css';
 export const Service = () => {
   return (
     <>
-      <section className='relative '>
+      <section className='relative Height  '>
         <ParallaxBanner
           layers={[
             { image: './8.jpg', speed: -30 },
           ]}
-          className={`aspect-[2/1] object-cover     Height   `}
+          className={`aspect-[2/1] object-cover     h-[100%] pb-1  `}
         >
-          <div className='text-white text-center font-mono relative z-10 '>
-            <h2 className='text-4xl pt-12 pb-8 '> My service</h2>
-            <div className='relative  flex  justify-center translate-y-1'>
-              <span className=' absolute w-12 h-[1px] bg-white top-[-2rem] left-[43.5%]'></span>
-              <span className=' absolute w-12 h-[1px] bg-[#ad8e6d] top-[-2rem] left-[48.5%]'></span>
-              <span className=' absolute w-12 h-[1px] bg-white top-[-2rem] left-[53%]'></span>
-            </div>
+          <div className='text-white text-center  font-mono relative z-10 '>
+            <h2 className='text-4xl pt-12 pb-8 underline underline-offset-2 capitalize  '> My service</h2>
 
             <div className=''>
               <div className='md:flex md:justify-center lg:flex grid   lg:justify-around  items-center lg:px-32 md:px-8 sm:px-20 px-5 gap-5 text-justify'>
